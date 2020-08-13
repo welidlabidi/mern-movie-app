@@ -27,13 +27,11 @@ if (process.env.NODE_ENV === "production") {
 }
 
 mongoose
-  .connect(
-    db || /* process.env.MONGODB_CONNECTION_STRING, */ {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useCreateIndex: true,
-    }
-  )
+  .connect(db && process.env.MONGODB_CONNECTION_STRING, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+  })
   .then(() => console.log("Established Mongoose Connected..."))
   .catch((err) => console.log(err));
 // When successfully connected
