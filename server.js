@@ -38,4 +38,6 @@ mongoose
   .catch((err) => console.log(err));
 // When successfully connected
 
+console.log(db);
+
 app.use("/users", require("./routes/userRouter"));

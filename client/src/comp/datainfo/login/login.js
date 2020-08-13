@@ -22,7 +22,7 @@ const Login = () => {
     try {
       const loginUser = { email, password };
       const loginRes = await Axios.post(
-        "http://localhost:4000/users/login",
+        "https://localhost:4000/users/login",
         loginUser
       );
       setUserData({
