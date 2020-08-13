@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const path = require("path");
-const db = require("./config/keys").mongoURI;
+const db = require("./config/keys");
 const cors = require("cors");
 /* const URI = require("./config/server");
  */ require("dotenv").config();
@@ -27,11 +27,15 @@ if (process.env.NODE_ENV === "production") {
 }
 
 mongoose
-  .connect(db && process.env.MONGODB_CONNECTION_STRING, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-  })
+  .connect(
+    "mongodb://welid:welid123@ds233238.mlab.com:33238/heroku_jncn661l" &&
+      process.env.MONGODB_CONNECTION_STRING,
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useCreateIndex: true,
+    }
+  )
   .then(() => console.log("Established Mongoose Connected..."))
   .catch((err) => console.log(err));
 // When successfully connected
