@@ -1,0 +1,84 @@
+$primaryColor: white;
+$secondaryColor: black;
+
+@mixin BG() {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin header() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+@mixin wrapper() {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@mixin flex() {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin form() {
+  background-color: rgb(122, 120, 120);
+  width: 260px;
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: baseline;
+  border-radius: 5px;
+  border: solid 1px $primaryColor;
+  margin-top: 80px;
+}
+
+@mixin name() {
+  text-align: center;
+  width: 100%;
+}
+
+@mixin input() {
+  border: none;
+  border-bottom: solid 1px black;
+  border-radius: 0px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  width: 82%;
+  background: transparent;
+  color: $primaryColor;
+}
+
+@mixin password() {
+  border: none;
+  border-bottom: solid 1px $secondaryColor;
+  border-radius: 0px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  background: transparent;
+  width: 190px;
+}
+
+@mixin svg($top) {
+  border-bottom: solid 1px $secondaryColor;
+  margin-top: $top;
+  font-size: 20px;
+}
+
+@mixin placeholder() {
+  color: $primaryColor;
+}
+
+@mixin btn() {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}

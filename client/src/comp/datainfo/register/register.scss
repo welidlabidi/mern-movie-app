@@ -1,0 +1,52 @@
+@import "../../scss//variables.scss";
+
+.bkregister {
+  background-image: url(../../lion.330b60ac.jpg);
+  @include BG();
+
+  .registerheader {
+    @include header();
+  }
+  .wrapperregister {
+    @include wrapper();
+
+    .register {
+      @include flex();
+
+      .registerform {
+        @include form();
+
+        h6 {
+          @include name();
+        }
+        .inputsg {
+          @include input();
+        }
+        .confirmpassword {
+          @include password();
+        }
+        svg {
+          @include svg(2px);
+        }
+        ::placeholder {
+          @include placeholder();
+        }
+
+        .btnsignup {
+          @include btn();
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .bkregister {
+    background-image: url(../../transformers.e3fc5e2c.jpg);
+
+    .registerheader {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

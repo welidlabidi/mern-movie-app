@@ -1,0 +1,76 @@
+.bklandingpage {
+  background-image: url(../denzel.64dc224d.jpg);
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .landingpageheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    h1 {
+      color: white;
+      text-align: center;
+    }
+    .landingpagebutton {
+      display: flex;
+      width: 160px;
+      justify-content: space-evenly;
+    }
+  }
+  .wrapperlandingpage {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .backgroundtext {
+      background: rgb(146, 146, 146);
+      opacity: 0.8;
+
+      .textabout {
+        text-align: center;
+        color: white;
+        padding: 10px;
+        height: 67vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        opacity: 1;
+        z-index: 1000;
+
+        .warningtext {
+          color: red;
+        }
+        p {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .bklandingpage {
+    background-image: url(../../itt.6e41f890.jpg);
+
+    .landingpageheader {
+      flex-direction: row;
+      justify-content: space-between;
+      h1 {
+        color: black;
+      }
+      button {
+        background-color: black;
+        color: white;
+        border: solid 1px white;
+      }
+    }
+    .backgroundtext {
+      margin-top: 35px;
+    }
+  }
+}

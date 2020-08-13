@@ -1,0 +1,110 @@
+.bklandingpage {
+  background-image: url(../denzel.64dc224d.jpg);
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bklandingpage .landingpageheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.bklandingpage .landingpageheader h1 {
+  color: white;
+  text-align: center;
+}
+
+.bklandingpage .landingpageheader .landingpagebutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 160px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.bklandingpage .wrapperlandingpage {
+  height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bklandingpage .wrapperlandingpage .backgroundtext {
+  background: #929292;
+  opacity: 0.8;
+}
+
+.bklandingpage .wrapperlandingpage .backgroundtext .textabout {
+  text-align: center;
+  color: white;
+  padding: 10px;
+  height: 67vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 1;
+  z-index: 1000;
+}
+
+.bklandingpage .wrapperlandingpage .backgroundtext .textabout .warningtext {
+  color: red;
+}
+
+.bklandingpage .wrapperlandingpage .backgroundtext .textabout p {
+  color: black;
+}
+
+@media only screen and (min-width: 500px) {
+  .bklandingpage {
+    background-image: url(../../itt.6e41f890.jpg);
+  }
+  .bklandingpage .landingpageheader {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .bklandingpage .landingpageheader h1 {
+    color: black;
+  }
+  .bklandingpage .landingpageheader button {
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+  }
+  .bklandingpage .backgroundtext {
+    margin-top: 35px;
+  }
+}
+/*# sourceMappingURL=landingpage.css.map */

@@ -1,0 +1,238 @@
+.bkapp {
+  background-color: black !important;
+}
+
+.bkapp .islogdheader {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bkapp .islogdheader h5 {
+  font-size: 20px;
+  font-style: italic;
+  font-family: monospace;
+  color: white;
+}
+
+.bkapp .top img {
+  height: 400px;
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.bkapp .header {
+  margin-top: 60px;
+}
+
+.bkapp .header h1 {
+  color: white;
+  font-style: oblique;
+  font-family: initial;
+}
+
+.bkapp .header input {
+  border: solid white 1px;
+  padding-left: 10px;
+  background: transparent;
+  outline: none;
+  color: white;
+  border-radius: 10px;
+}
+
+.bkapp .header input[type="text"]:focus {
+  -webkit-box-shadow: 0 0 5px #51cbee;
+          box-shadow: 0 0 5px #51cbee;
+  border: 1px solid #51cbee;
+}
+
+.bkapp .header .search {
+  color: white;
+  background-color: transparent;
+  margin: 15px;
+  border: 1px solid white;
+  border-radius: 9px;
+  outline: none;
+}
+
+.bkapp .header .search:focus {
+  -webkit-box-shadow: 0 0 5px #51cbee;
+          box-shadow: 0 0 5px #51cbee;
+  border: 1px solid #51cbee;
+  outline: none;
+}
+
+.bkapp .latest {
+  color: white;
+  margin-left: 10px;
+  font-size: 22px;
+  height: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.bkapp .movie {
+  border: none !important;
+  padding: 20px;
+  background-color: transparent !important;
+  cursor: pointer;
+}
+
+.bkapp .movie .buttoncard {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.bkapp .movie .buttoncard img {
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.bkapp .movie .buttoncard img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.popup {
+  background-color: black !important;
+  border-radius: 5px !important;
+}
+
+.popup .titlemovie {
+  color: white;
+}
+
+.popup .discription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: white;
+}
+
+.popup .modalimg {
+  width: 100%;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popup .modalimg img {
+  border-radius: 10px;
+  width: 215px;
+}
+
+.popup .data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: auto;
+  font-size: medium;
+  font-style: italic;
+}
+
+.popup .earth {
+  -webkit-animation: rotation 1.5s infinite ease-in-out;
+          animation: rotation 1.5s infinite ease-in-out;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+.popup h5 {
+  font-family: auto;
+  font-size: medium;
+  font-style: italic;
+}
+
+.popup .iframe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popup .cardactors {
+  width: 175px;
+  height: 345px;
+  background: black !important;
+  color: white !important;
+  margin: 10px;
+  margin-top: 40px;
+}
+
+.popup button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.loadbutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.loadbutton .loadmore,
+.loadbutton .loadmoreback {
+  margin: 30px;
+  background: transparent;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+.loadbutton .loadmore:hover,
+.loadbutton .loadmoreback:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=app.css.map */

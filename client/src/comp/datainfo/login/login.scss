@@ -1,0 +1,48 @@
+@import "../../scss//variables.scss";
+
+.bklogin {
+  background-image: url(../../lion.330b60ac.jpg);
+  @include BG();
+  .loginheader {
+    @include header();
+  }
+  .wrapperlogin {
+    @include wrapper();
+    .login {
+      @include flex();
+      .loginform {
+        @include form();
+        h6 {
+          @include name();
+        }
+
+        .inputsg {
+          @include input();
+        }
+        .password {
+          @include password();
+        }
+        svg {
+          @include svg(3px);
+        }
+        ::placeholder {
+          @include placeholder();
+        }
+        .btnsignin {
+          @include btn();
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .bklogin {
+    background-image: url(../../transformers.e3fc5e2c.jpg);
+
+    .loginheader {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

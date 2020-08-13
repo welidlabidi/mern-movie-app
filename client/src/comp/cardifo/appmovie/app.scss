@@ -1,0 +1,169 @@
+.bkapp {
+  background-color: black !important;
+  .islogdheader {
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    h5 {
+      font-size: 20px;
+      font-style: italic;
+      font-family: monospace;
+      color: white;
+    }
+  }
+  .top img {
+    height: 400px;
+    width: 100%;
+    object-fit: fill;
+  }
+  .header {
+    margin-top: 60px;
+
+    h1 {
+      color: white;
+      font-style: oblique;
+      font-family: initial;
+    }
+    input {
+      border: solid white 1px;
+      padding-left: 10px;
+      background: transparent;
+      outline: none;
+      color: white;
+      border-radius: 10px;
+      &[type="text"]:focus {
+        box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+        border: 1px solid rgba(81, 203, 238, 1);
+      }
+    }
+
+    .search {
+      color: white;
+      background-color: transparent;
+      margin: 15px;
+      border: 1px solid white;
+      border-radius: 9px;
+      outline: none;
+
+      &:focus {
+        box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+        border: 1px solid rgba(81, 203, 238, 1);
+        outline: none;
+      }
+    }
+  }
+
+  .latest {
+    color: white;
+    margin-left: 10px;
+    font-size: 22px;
+    height: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .movie {
+    border: none !important;
+    padding: 20px;
+    background-color: transparent !important;
+    cursor: pointer;
+
+    .buttoncard {
+      border: none;
+      background: transparent;
+      outline: none;
+
+      img {
+        border-radius: 10px;
+        border: 1px solid white;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+.popup {
+  background-color: black !important;
+  border-radius: 5px !important;
+  .titlemovie {
+    color: white;
+  }
+  .discription {
+    display: flex;
+    align-items: flex-start;
+    color: white;
+  }
+  .modalimg {
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .modalimg img {
+    border-radius: 10px;
+    width: 215px;
+  }
+  .data {
+    display: flex;
+    justify-content: space-evenly;
+
+    font-family: auto;
+    font-size: medium;
+    font-style: italic;
+  }
+  .earth {
+    animation: rotation 1.5s infinite ease-in-out;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+      transform: rotateX(360deg);
+      transform: rotateZ(360deg);
+    }
+  }
+  h5 {
+    font-family: auto;
+    font-size: medium;
+    font-style: italic;
+  }
+  .iframe {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cardactors {
+    width: 175px;
+    height: 345px;
+    background: black !important;
+    color: white !important;
+    margin: 10px;
+    margin-top: 40px;
+  }
+  button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+.loadbutton {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  .loadmore,
+  .loadmoreback {
+    margin: 30px;
+    background: transparent;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
