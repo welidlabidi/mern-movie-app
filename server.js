@@ -28,8 +28,8 @@ if (process.env.NODE_ENV === "production") {
 
 mongoose
   .connect(
-    "mongodb://welid:welid123@ds233238.mlab.com:33238/heroku_jncn661l" &&
-      process.env.MONGODB_CONNECTION_STRING,
+    "mongodb://welid:welid123@ds233238.mlab.com:33238/heroku_jncn661l" /* &&
+      process.env.MONGODB_CONNECTION_STRING */,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
