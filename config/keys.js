@@ -1,3 +1,4 @@
 module.exports = {
-  mongoURI: "mongodb://welid:welid123@ds233238.mlab.com:33238/heroku_jncn661l",
+  mongoURI:
+    "mongodb://welid:password123@ds033123.mlab.com:33123/heroku_kx4gw92h",
 };

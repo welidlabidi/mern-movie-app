@@ -24,9 +24,9 @@ const Register = () => {
     try {
       e.preventDefault();
       const newUser = { email, password, passwordconfirm, displayName };
-      await Axios.post("https://localhost:4000/users/register", newUser);
+      await Axios.post("http://localhost:4000/users/register", newUser);
 
-      const loginRes = await Axios.post("https://localhost:4000/users/login", {
+      const loginRes = await Axios.post("http://localhost:4000/users/login", {
         email,
         password,
       });
