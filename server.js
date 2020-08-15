@@ -1,11 +1,10 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+require("dotenv").config();
 const path = require("path");
 const db = require("./config/keys");
 const cors = require("cors");
-/* const URI = require("./config/server");
- */ require("dotenv").config();
 
 const app = express();
 app.use(bodyParser.json());

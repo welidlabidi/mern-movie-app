@@ -21,7 +21,10 @@ const Login = () => {
     e.preventDefault();
     try {
       const loginUser = { email, password };
-      const loginRes = await Axios.post("/users/login", loginUser);
+      const loginRes = await Axios.post(
+        process.env.PORT + "/users/login",
+        loginUser
+      );
       setUserData({
         token: loginRes.data.token,
         user: loginRes.data.user,
