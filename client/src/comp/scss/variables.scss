@@ -43,6 +43,7 @@ $secondaryColor: black;
 @mixin name() {
   text-align: center;
   width: 100%;
+  margin-top: 5px;
 }
 
 @mixin input() {
@@ -54,6 +55,7 @@ $secondaryColor: black;
   width: 82%;
   background: transparent;
   color: $primaryColor;
+  outline: none;
 }
 
 @mixin password() {
@@ -64,6 +66,8 @@ $secondaryColor: black;
   margin-left: 10px;
   background: transparent;
   width: 190px;
+  color: $primaryColor;
+  outline: none;
 }
 
 @mixin svg($top) {

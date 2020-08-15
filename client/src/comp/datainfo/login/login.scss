@@ -23,7 +23,7 @@
           @include password();
         }
         svg {
-          @include svg(3px);
+          @include svg(4px);
         }
         ::placeholder {
           @include placeholder();
