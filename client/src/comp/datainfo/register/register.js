@@ -24,12 +24,18 @@ const Register = () => {
     try {
       e.preventDefault();
       const newUser = { email, password, passwordconfirm, displayName };
-      await Axios.post("/users/register", newUser);
+      await Axios.post(
+        "http://serene-shore-80680.herokuapp.com/users/register",
+        newUser
+      );
 
-      const loginRes = await Axios.post("/users/login", {
-        email,
-        password,
-      });
+      const loginRes = await Axios.post(
+        "http://serene-shore-80680.herokuapp.com/users/login",
+        {
+          email,
+          password,
+        }
+      );
       setUserData({
         token: loginRes.data.token,
         user: loginRes.data.user,
