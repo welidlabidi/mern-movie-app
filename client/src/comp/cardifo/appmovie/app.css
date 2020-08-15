@@ -23,8 +23,8 @@
 .bkapp .top img {
   height: 400px;
   width: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .bkapp .header {
