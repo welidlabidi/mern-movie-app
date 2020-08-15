@@ -22,7 +22,7 @@ const Login = () => {
     try {
       const loginUser = { email, password };
       const loginRes = await Axios.post(
-        "http://serene-shore-80680.herokuapp.com/users/login",
+        "https://serene-shore-80680.herokuapp.com/users/login",
         loginUser
       );
       setUserData({
