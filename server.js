@@ -20,17 +20,19 @@ if (process.env.NODE_ENV === "production") {
   // set static folder
   app.use(express.static("client/build"));
 
-  /*  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-  }); */
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+  });
 }
 
 mongoose
-  .connect( db.mongoURI || /*  process.env.MONGODB_CONNECTION_STRING */, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-  })
+  .connect(
+    db.mongoURI || /*  process.env.MONGODB_CONNECTION_STRING */ {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useCreateIndex: true,
+    }
+  )
   .then(() => console.log("Established Mongoose Connected..."))
   .catch((err) => console.log(err));
 // When successfully connected
