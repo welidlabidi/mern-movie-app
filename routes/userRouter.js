@@ -3,6 +3,7 @@ const bcrypt = require("bcrypt");
 const auth = require("../middleware/auth");
 const jwt = require("jsonwebtoken");
 const User = require("../models/userModel");
+const jwt_SECRET = require("../config/jwt");
 
 const router = require("express").Router();
 
@@ -68,7 +69,8 @@ router.post("/login", async (req, res) => {
         msg: "Invalid password",
       });
 
-    const token = jwt.sign({ id: user._id }, process.env.jwt_SECRET);
+    const token = jwt.sign({ id: user._id }, jwt_SECRET.sr);
+
     res.json({
       token,
       user: {
