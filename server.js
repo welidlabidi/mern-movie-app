@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(express.json());
 app.use(cors());
 
-let port = process.env.PORT || 4000;
+const port = process.env.PORT || 4000;
 
 app.listen(port, () => console.log(`the server has started on port : ${port}`));
 
@@ -26,7 +26,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 mongoose
-  .connect(db.mongoURI || process.env.MONGODB_CONNECTION_STRING, {
+  .connect(/* db.mongoURI || */ process.env.MONGODB_CONNECTION_STRING, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,

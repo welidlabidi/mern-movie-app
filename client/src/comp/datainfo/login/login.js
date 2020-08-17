@@ -22,6 +22,7 @@ const Login = () => {
     try {
       const loginUser = { email, password };
       const loginRes = await Axios.post("/users/login", loginUser);
+      console.log(loginRes);
       setUserData({
         token: loginRes.data.token,
         user: loginRes.data.user,
